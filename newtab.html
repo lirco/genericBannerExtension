@@ -7,20 +7,25 @@
   <meta charset="UTF-8">
   <title></title>
   <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/angular-carousel/dist/angular-carousel.min.css" />
   <link rel="stylesheet" href="lib/angular/angular-csp.css">
   <link rel="stylesheet" href="css/style.css">
   <!--<link rel="stylesheet" href="dist/application.min.css">-->
 </head>
 
 <body data-ng-controller="mainController as mainCtrl">
+
+  <!-- Top Navbar-->
   <nav class="navbar navbar-default" style="background-color:white ; border-bottom:none ; padding: 0 50px ">
     <ul class="nav navbar-nav navbar-left">
       <li><a href="http://www.joyofkosher.com">
-        JoyOfKosher
-        <!--<img src = /img/icon.png>-->
+        <!--JoyOfKosher-->
+        <img src = /img/jok_icon_1.png>
       </a></li>
     </ul>
   </nav>
+
+  <!-- Main Content-->
   <div class="container">
     <div class="row" style="height: 200px"></div>
     <div class="row">
@@ -50,18 +55,176 @@
       </div>
       <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
     </div>
-    <nav class="navbar navbar-default navbar-fixed-bottom" style="height: 180px">  </nav>
-      <div>
-
-      </div>
   </div>
+
+  <!-- Bottom Navbar-->
+  <nav class="navbar navbar-default navbar-fixed-bottom" style="height: 180px">
+    <div class="carousel-wrapper">
+
+      <ul rn-carousel rn-carousel-controls rn-carousel-controls-allow-loop class="items-wrapper">
+        <!--<div class="navigation-arrow left">-->
+          <!--<span class="rn-carousel-control rn-carousel-control-prev" ng-click="prevSlide()"></span>-->
+        <!--</div>-->
+        <!--<div class="navigation-arrow right">-->
+          <!--<span class="rn-carousel-control rn-carousel-control-next" ng-click="nextSlide()"></span>-->
+        <!--</div>-->
+        <li class="item-wrapper">
+          <a ng-href="http://www.joyofkosher.com/2016/03/how-to-cook-duck/" href="http://www.joyofkosher.com/2016/03/how-to-cook-duck/" rel="">
+            <img ng-src="http://a5.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTM2ODU1MDk4MDMzNzEwNjg5.jpg"
+                 src="http://a5.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTM2ODU1MDk4MDMzNzEwNjg5.jpg"
+                 alt="Demystifying Duck">
+          </a>
+          <div class="item-title-container">
+            <div class="item-title">
+              Demystifying Duck
+            </div>
+          </div>
+        </li>
+        <li class="item-wrapper">
+          <a ng-href="http://www.joyofkosher.com/2016/03/3-fancy-main-dishes-for-any-feast/" href="http://www.joyofkosher.com/2016/03/3-fancy-main-dishes-for-any-feast/" rel="">
+            <img ng-src="http://a5.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTM3MjE1ODgwOTIzNzE5NDMw.jpg"
+                 src="http://a5.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTM3MjE1ODgwOTIzNzE5NDMw.jpg"
+                 alt="3 Fancy Main Dishes, Perfect For Any Feast">
+          </a>
+          <div class="item-title-container">
+            <div class="item-title">
+              3 Fancy Main Dishes, Perfect For Any Feast
+            </div>
+          </div>
+        </li>
+        <li class="item-wrapper">
+          <a ng-href="http://www.joyofkosher.com/2016/03/gluten-free-baked-treats-for-purim/" href="http://www.joyofkosher.com/2016/03/gluten-free-baked-treats-for-purim/" rel="">
+            <img ng-src="http://a3.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTM2NjM5MTc2NjA1OTY3OTY3.jpg"
+                 src="http://a3.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTM2NjM5MTc2NjA1OTY3OTY3.jpg"
+                 alt="Gluten-Free Baked Treats For Purim">
+          </a>
+          <div class="item-title-container">
+            <div class="item-title">
+              Gluten-Free Baked Treats For Purim
+            </div>
+          </div>
+        </li>
+        <li class="item-wrapper">
+          <a ng-href="http://www.joyofkosher.com/2016/03/vegetarian-dairy-shabbat-menu/" href="http://www.joyofkosher.com/2016/03/vegetarian-dairy-shabbat-menu/" rel="">
+            <img ng-src="http://a1.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTMxNzYwODMxOTU1MjQ0MzA2.jpg"
+                 src="http://a1.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTMxNzYwODMxOTU1MjQ0MzA2.jpg"
+                 alt="Vegetarian Shabbat Menu">
+          </a>
+          <div class="item-title-container">
+            <div class="item-title">
+              Vegetarian Shabbat Menu
+            </div>
+          </div>
+        </li>
+
+        <li class="item-wrapper">
+          <a ng-href="http://www.joyofkosher.com/2016/03/how-to-cook-duck/" href="http://www.joyofkosher.com/2016/03/how-to-cook-duck/" rel="">
+            <img ng-src="http://a5.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTM2ODU1MDk4MDMzNzEwNjg5.jpg"
+                 src="http://a5.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTM2ODU1MDk4MDMzNzEwNjg5.jpg"
+                 alt="Demystifying Duck">
+          </a>
+          <div class="item-title-container">
+            <div class="item-title">
+              Demystifying Duck
+            </div>
+          </div>
+        </li>
+        <li class="item-wrapper">
+          <a ng-href="http://www.joyofkosher.com/2016/03/3-fancy-main-dishes-for-any-feast/" href="http://www.joyofkosher.com/2016/03/3-fancy-main-dishes-for-any-feast/" rel="">
+            <img ng-src="http://a5.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTM3MjE1ODgwOTIzNzE5NDMw.jpg"
+                 src="http://a5.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTM3MjE1ODgwOTIzNzE5NDMw.jpg"
+                 alt="3 Fancy Main Dishes, Perfect For Any Feast">
+          </a>
+          <div class="item-title-container">
+            <div class="item-title">
+              3 Fancy Main Dishes, Perfect For Any Feast
+            </div>
+          </div>
+        </li>
+        <li class="item-wrapper">
+          <a ng-href="http://www.joyofkosher.com/2016/03/gluten-free-baked-treats-for-purim/" href="http://www.joyofkosher.com/2016/03/gluten-free-baked-treats-for-purim/" rel="">
+            <img ng-src="http://a3.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTM2NjM5MTc2NjA1OTY3OTY3.jpg"
+                 src="http://a3.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTM2NjM5MTc2NjA1OTY3OTY3.jpg"
+                 alt="Gluten-Free Baked Treats For Purim">
+          </a>
+          <div class="item-title-container">
+            <div class="item-title">
+              Gluten-Free Baked Treats For Purim
+            </div>
+          </div>
+        </li>
+        <li class="item-wrapper">
+          <a ng-href="http://www.joyofkosher.com/2016/03/vegetarian-dairy-shabbat-menu/" href="http://www.joyofkosher.com/2016/03/vegetarian-dairy-shabbat-menu/" rel="">
+            <img ng-src="http://a1.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTMxNzYwODMxOTU1MjQ0MzA2.jpg"
+                 src="http://a1.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTMxNzYwODMxOTU1MjQ0MzA2.jpg"
+                 alt="Vegetarian Shabbat Menu">
+          </a>
+          <div class="item-title-container">
+            <div class="item-title">
+              Vegetarian Shabbat Menu
+            </div>
+          </div>
+        </li>
+
+        <li class="item-wrapper">
+          <a ng-href="http://www.joyofkosher.com/2016/03/how-to-cook-duck/" href="http://www.joyofkosher.com/2016/03/how-to-cook-duck/" rel="">
+            <img ng-src="http://a5.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTM2ODU1MDk4MDMzNzEwNjg5.jpg"
+                 src="http://a5.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTM2ODU1MDk4MDMzNzEwNjg5.jpg"
+                 alt="Demystifying Duck">
+          </a>
+          <div class="item-title-container">
+            <div class="item-title">
+              Demystifying Duck
+            </div>
+          </div>
+        </li>
+        <li class="item-wrapper">
+          <a ng-href="http://www.joyofkosher.com/2016/03/3-fancy-main-dishes-for-any-feast/" href="http://www.joyofkosher.com/2016/03/3-fancy-main-dishes-for-any-feast/" rel="">
+            <img ng-src="http://a5.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTM3MjE1ODgwOTIzNzE5NDMw.jpg"
+                 src="http://a5.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTM3MjE1ODgwOTIzNzE5NDMw.jpg"
+                 alt="3 Fancy Main Dishes, Perfect For Any Feast">
+          </a>
+          <div class="item-title-container">
+            <div class="item-title">
+              3 Fancy Main Dishes, Perfect For Any Feast
+            </div>
+          </div>
+        </li>
+        <li class="item-wrapper">
+          <a ng-href="http://www.joyofkosher.com/2016/03/gluten-free-baked-treats-for-purim/" href="http://www.joyofkosher.com/2016/03/gluten-free-baked-treats-for-purim/" rel="">
+            <img ng-src="http://a3.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTM2NjM5MTc2NjA1OTY3OTY3.jpg"
+                 src="http://a3.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTM2NjM5MTc2NjA1OTY3OTY3.jpg"
+                 alt="Gluten-Free Baked Treats For Purim">
+          </a>
+          <div class="item-title-container">
+            <div class="item-title">
+              Gluten-Free Baked Treats For Purim
+            </div>
+          </div>
+        </li>
+        <li class="item-wrapper">
+          <a ng-href="http://www.joyofkosher.com/2016/03/vegetarian-dairy-shabbat-menu/" href="http://www.joyofkosher.com/2016/03/vegetarian-dairy-shabbat-menu/" rel="">
+            <img ng-src="http://a1.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTMxNzYwODMxOTU1MjQ0MzA2.jpg"
+                 src="http://a1.files.joyofkosher.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_200,q_80,w_300/MTMxNzYwODMxOTU1MjQ0MzA2.jpg"
+                 alt="Vegetarian Shabbat Menu">
+          </a>
+          <div class="item-title-container">
+            <div class="item-title">
+              Vegetarian Shabbat Menu
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
 <script src="lib/angular/angular.min.js"></script>
 <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="lib/angular-bootstrap/ui-bootstrap.min.js"></script>
 <script src="application.js"></script>
 <script src="chrome.main.controller.js"></script>
-<script src="chrome.autofocus.directive.js"></script>
+<script src="lib/angular-touch/angular-touch.min.js"></script>
+<script src="lib/angular-carousel/dist/angular-carousel.min.js"></script>
 
 </body>
 
